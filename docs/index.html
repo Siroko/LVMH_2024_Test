@@ -17,6 +17,7 @@
     <script src="./examples/gravity.js"></script>
     <script type="module">
       import {Pane} from 'https://cdn.jsdelivr.net/npm/tweakpane@4.0.1/dist/tweakpane.min.js';
+      let debug = true;
       const pane = new Pane();
       pane.addBinding(window, 'isAttraction');
       pane.addBinding(window, 'inertiaInfinite');
@@ -115,6 +116,15 @@
         window.onShowCountries();
       });
 
+
+      window.addEventListener('dblclick', () => {
+        if (debug) {
+          pane.element.parentElement.style.display = 'none'
+        } else {
+          pane.element.parentElement.style.display = 'block'
+        }
+        debug = !debug;
+      });
     </script>
     <style type="text/css">
       * {
