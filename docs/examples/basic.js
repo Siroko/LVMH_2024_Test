@@ -370,7 +370,7 @@ Example.basic = function() {
     },
     {
       image: "2020/casablanca-960-x-1080-1.jpg",
-      country: "uk",
+      country: "france",
       continent: "europe"
     },
     {
@@ -380,18 +380,18 @@ Example.basic = function() {
     },
     {
       image: "2020/ester-manas-duo960x1080.jpg",
-      country: "uk",
+      country: "belgium",
       continent: "europe"
     },
     {
       image: "2020/helmsted-960-x-1080.jpg",
-      country: "uk",
+      country: "denmark",
       continent: "europe"
     },
     {
       image: "2020/kaushik_velendra-960-x-1080.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "india",
+      continent: "asia"
     },
     {
       image: "2020/nicholas_daley-960-x-1080-1.jpg",
@@ -400,60 +400,60 @@ Example.basic = function() {
     },
     {
       image: "2020/nous_etudions-960-x-1080.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "argentina",
+      continent: "south-america"
     },
     {
       image: "2020/peter_do-960-x-1080-1.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "us",
+      continent: "north-america"
     },
     {
       image: "2020/piero_dangelo-960-x-1080.jpg",
-      country: "uk",
+      country: "italy",
       continent: "europe"
     },
     {
       image: "2020/rave-960x1080-1.jpg",
-      country: "uk",
+      country: "sweden",
       continent: "europe"
     },
     {
       image: "2020/samuel-gui-duo960x1080.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "china",
+      continent: "asia"
     },
     {
       image: "2020/sindiso_khumalo-960-x-1080-1.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "south-africa",
+      continent: "africa"
     },
     {
       image: "2020/supriya_lele-960-x-1080-1.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "india",
+      continent: "asia"
     },
     {
       image: "2020/tomo_koizumi-960-x-1080-1.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "japan",
+      continent: "asia"
     },
     {
       image: "2020/vaqar-duo-960x1080-1.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "iran",
+      continent: "asia"
     },
     {
       image: "2020/yuhan_wang-960x1080-1.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "china",
+      continent: "asia"
     }
   ];
   var participants_2019 = [
     {
       image: "2019/anrealage-960-x-1080-2.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "japan",
+      continent: "asia"
     },
     {
       image: "2019/bethany-williams-960-x-1080-2.jpg",
@@ -462,62 +462,62 @@ Example.basic = function() {
     },
     {
       image: "2019/bode-960-x-1080-2.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "us",
+      continent: "north-america"
     },
     {
       image: "2019/boramy-viguier-960-x-1080.jpg",
-      country: "uk",
+      country: "france",
       continent: "europe"
     },
     {
       image: "2019/duran-lantink-960-x-1080.jpg",
-      country: "uk",
+      country: "netherlands",
       continent: "europe"
     },
     {
       image: "2019/eftychia-960-x-1080.jpg",
-      country: "uk",
+      country: "greece",
       continent: "europe"
     },
     {
       image: "2019/germanier-960-x-1080.jpg",
-      country: "uk",
+      country: "switzerland",
       continent: "europe"
     },
     {
       image: "2019/hed-mayner-960-x-1080-2.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "israel",
+      continent: "asia"
     },
     {
       image: "2019/hu-960-x-1080.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "china",
+      continent: "asia"
     },
     {
       image: "2019/kanghyuk-960-x-1080.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "south-korea",
+      continent: "asia"
     },
     {
       image: "2019/kenneth-ize-960-x-1080-2.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "nigeria",
+      continent: "africa"
     },
     {
       image: "2019/kiko-kostadinov-960-x-1080.jpg",
-      country: "uk",
+      country: "bulgaria",
       continent: "europe"
     },
     {
       image: "2019/lecavalier-960-x-1080.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "canada",
+      continent: "north-america"
     },
     {
       image: "2019/paradis-960-x-1080.jpg",
-      country: "uk",
+      country: "france",
       continent: "europe"
     },
     {
@@ -527,12 +527,12 @@ Example.basic = function() {
     },
     {
       image: "2019/phipps-960-x-1080-2.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "us",
+      continent: "north-america"
     },
     {
       image: "2019/richard-malone-960-x-1080.jpg",
-      country: "uk",
+      country: "ireland",
       continent: "europe"
     },
     {
@@ -542,24 +542,24 @@ Example.basic = function() {
     },
     {
       image: "2019/susan-fang-960-x-1080.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "china",
+      continent: "asia"
     },
     {
       image: "2019/thebe-magugu-960-x-1080-2.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "south-africa",
+      continent: "africa"
     }
   ];
   var participants_2018 = [
     {
       image: "2018/akiko-960-x-1080.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "japan",
+      continent: "asia"
     },
     {
       image: "2018/botter-960-x-1080-1.jpg",
-      country: "uk",
+      country: "netherlands",
       continent: "europe"
     },
     {
@@ -569,63 +569,63 @@ Example.basic = function() {
     },
     {
       image: "2018/doublet-960-x-1080-1.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "japan",
+      continent: "asia"
     },
     {
       image: "2018/eckhaus-latta-960-x-1080-1.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "us",
+      continent: "north-america"
     },
     {
       image: "2018/edda-960-x-1080.jpg",
-      country: "uk",
+      country: "norway",
       continent: "europe"
     },
     {
       image: "2018/ernest-w-bake-960-x-1080.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "us",
+      continent: "north-america"
     },
     {
       image: "2018/faustine-steinmetz-960-x-1080.jpg",
-      country: "uk",
+      country: "france",
       continent: "europe"
     },
     {
       image: "2018/ludovic-st-sernin-960-x-1080-1.jpg",
-      country: "uk",
+      country: "france",
       continent: "europe"
     },
     {
       image: "2018/magdalena-960-x-1080.jpg",
-      country: "uk",
+      country: "poland",
       continent: "europe"
     },
     {
       image: "2018/marta-960-x-1080.jpg",
-      country: "uk",
+      country: "germany",
       continent: "europe"
     },
     {
       image: "2018/matthew-dolan-960-x-1080-1.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "us",
+      continent: "north-america"
     },
     {
       image: "2018/neil-960-x-1080.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "us",
+      continent: "north-america"
     },
     {
       image: "2018/ottolinger-960-x-1080.jpg",
-      country: "uk",
+      country: "switzerland",
       continent: "europe"
     },
     {
       image: "2018/rok-960-x-1080-1.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "south-korea",
+      continent: "asia"
     },
     {
       image: "2018/samuel-ross-960-x-1080-1.jpg",
@@ -634,18 +634,18 @@ Example.basic = function() {
     },
     {
       image: "2018/serhat-isik-benjamin-alexander-960-x-1080.jpg",
-      country: "uk",
+      country: "germany",
       continent: "europe"
     },
     {
       image: "2018/snow-960-x-1080.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "china",
+      continent: "asia"
     },
     {
       image: "2018/younchan-960-x-1080.jpg",
-      country: "uk",
-      continent: "europe"
+      country: "south-korea",
+      continent: "asia"
     }
   ];
   
