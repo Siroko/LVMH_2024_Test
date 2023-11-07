@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "build": "webpack",
-    "dev": "webpack-dev-server --content-base docs/",
+    "dev": "webpack-dev-server --host 0.0.0.0 --content-base docs/",
     "test": "mocha test",
     "lint": "eslint *.js test/*.js",
     "doc": "markdox *.js -o API.md",
@@ -44,5 +44,7 @@
     "webpack": "^2.2.1",
     "webpack-dev-server": "^1.16.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "tweakpane": "^4.0.1"
+  }
 }

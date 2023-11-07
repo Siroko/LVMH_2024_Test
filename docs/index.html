@@ -15,6 +15,71 @@
     <script src="./libs/bundle.js"></script>
     <script src="./examples/basic.js"></script>
     <script src="./examples/gravity.js"></script>
+    <script type="module">
+      import {Pane} from 'https://cdn.jsdelivr.net/npm/tweakpane@4.0.1/dist/tweakpane.min.js';
+      const pane = new Pane();
+      pane.addBinding(window, 'isAttraction');
+      pane.addBinding(window, 'inertiaInfinite');
+      const density = pane.addBinding(window, 'globalDensity');
+      density.on('change', ()=>{
+        window.updateDensity();
+      });
+
+      const scale = pane.addBinding(window, 'globalScale', {
+        min: 0.3,
+        max: 2,
+        step: 0.00001,
+      });
+
+      scale.on('change', ()=>{
+        window.updateScale();
+      });
+      const btn = pane.addButton({
+        title: 'ResetCircles',
+        label: 'Reset',   // optional
+      });
+
+      btn.on('click', () => {
+        window.onCircleClick();
+      });
+
+      const btn_2023 = pane.addButton({
+        title: '2023',
+        label: 'Show 2023',   // optional
+      });
+
+      btn_2023.on('click', () => {
+        window.onShowYear(2023);
+      });
+
+      const btn_2022 = pane.addButton({
+        title: '2022',
+        label: 'Show 2022',   // optional
+      });
+
+      btn_2022.on('click', () => {
+        window.onShowYear(2022);
+      });
+
+      const btn_all = pane.addButton({
+        title: 'All years',
+        label: 'Show All years',   // optional
+      });
+
+      btn_all.on('click', () => {
+        window.onShowYear(0);
+      });
+
+      const btn_countries = pane.addButton({
+        title: 'Countries',
+        label: 'Show Countries',   // optional
+      });
+
+      btn_countries.on('click', () => {
+        window.onShowCountries();
+      });
+
+    </script>
     <style type="text/css">
       * {
         box-sizing: border-box;
@@ -24,9 +89,20 @@
         margin: 0;
         padding: 0;
       }
+      header{
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("images/logo-2023.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+      }
     </style>
   </head>
   <body>
+    <header />
     <script>
       var pluginName = 'matter-attractors'; // PLUGIN_NAME
       var repoUrl = 'https://github.com/liabru/matter-attractors'; // PLUGIN_REPO_URL
@@ -37,12 +113,12 @@
         preventZoom: true,
         resetOnOrientation: true,
         toolbar: {
-          title: pluginName,
-          url: repoUrl,
-          reset: true,
-          source: true,
-          fullscreen: true,
-          exampleSelect: true
+          title: "",
+          url: "",
+          reset: false,
+          source: false,
+          fullscreen: false,
+          exampleSelect: false
         },
         examples: [
           {
@@ -50,12 +126,6 @@
             id: 'basic',
             init: Example.basic,
             sourceLink: repoUrl + '/blob/master/docs/examples/basic.js'
-          },
-          {
-            name: 'Gravity',
-            id: 'gravity',
-            init: Example.gravity,
-            sourceLink: repoUrl + '/blob/master/docs/examples/gravity.js'
           }
         ]
       });
