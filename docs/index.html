@@ -61,6 +61,42 @@
         window.onShowYear(2022);
       });
 
+      const btn_2021 = pane.addButton({
+        title: '2021',
+        label: 'Show 2021',   // optional
+      });
+
+      btn_2021.on('click', () => {
+        window.onShowYear(2021);
+      });
+
+      const btn_2020 = pane.addButton({
+        title: '2020',
+        label: 'Show 2020',   // optional
+      });
+
+      btn_2020.on('click', () => {
+        window.onShowYear(2020);
+      });
+
+      const btn_2019 = pane.addButton({
+        title: '2019',
+        label: 'Show 2019',   // optional
+      });
+
+      btn_2019.on('click', () => {
+        window.onShowYear(2019);
+      });
+
+      const btn_2018 = pane.addButton({
+        title: '2018',
+        label: 'Show 2018',   // optional
+      });
+
+      btn_2018.on('click', () => {
+        window.onShowYear(2018);
+      });
+
       const btn_all = pane.addButton({
         title: 'All years',
         label: 'Show All years',   // optional
@@ -102,7 +138,6 @@
     </style>
   </head>
   <body>
-    <header />
     <script>
       var pluginName = 'matter-attractors'; // PLUGIN_NAME
       var repoUrl = 'https://github.com/liabru/matter-attractors'; // PLUGIN_REPO_URL
@@ -129,10 +164,6 @@
           }
         ]
       });
-      setTimeout(()=>{
-        document.querySelector(".matter-header").style.display = "none";
-      }, 500);
-      
     </script>
   </body>
 </html>

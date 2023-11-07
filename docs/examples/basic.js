@@ -4,10 +4,11 @@ Matter.use(
 );
 
 var Example = Example || {};
-window.isAttraction = false;
+window.isAttraction = true;
 window.inertiaInfinite = true;
 window.globalDensity = 0.0003;
 window.globalScale = 1;
+window.currentYear = 2023;
 
 Example.basic = function() {
   // module aliases
@@ -461,26 +462,26 @@ Example.basic = function() {
       year: 2023,
       participants: participants_2023
     },
-    // {
-    //   year: 2022,
-    //   participants: participants_2022
-    // },
-    // {
-    //   year: 2021,
-    //   participants: participants_2021
-    // },
-    // {
-    //   year: 2020,
-    //   participants: participants_2020
-    // },
-    // {
-    //   year: 2019,
-    //   participants: participants_2019
-    // },
-    // {
-    //   year: 2018,
-    //   participants: participants_2018
-    // }
+    {
+      year: 2022,
+      participants: participants_2022
+    },
+    {
+      year: 2021,
+      participants: participants_2021
+    },
+    {
+      year: 2020,
+      participants: participants_2020
+    },
+    {
+      year: 2019,
+      participants: participants_2019
+    },
+    {
+      year: 2018,
+      participants: participants_2018
+    }
   ];
   // create renderer
   var render = Render.create({
@@ -553,6 +554,7 @@ Example.basic = function() {
         }
     });
     attractiveBody.label = "year" + k;
+    attractiveBody.year = years[k].year;
     years[k].body = attractiveBody;
 
     World.add(world, attractiveBody);
@@ -585,6 +587,7 @@ Example.basic = function() {
       );
 
       body.label = "year" + k;
+      body.year = years[k].year;
       body.lastScale = 1;
       body.initSize = Matter.Vector.create(9.60 * scale * 0.5, 10.80 * scale);
 
@@ -687,6 +690,36 @@ Example.basic = function() {
         body.lastScale = window.globalScale;
       }
     }
+  };
+
+  window.onShowYear = (year) => {
+    for( var k = 0; k < years.length; k++) {
+      let body = years[k].body;
+      World.remove(world, body);
+      if(body.year === year || year === 0){
+        World.add(world, body);
+        if(year !== 0){
+          Matter.Body.setPosition(body, Matter.Vector.create(
+            window.innerWidth / 2,
+            window.innerHeight / 2
+          ));
+        } else {
+          Matter.Body.setPosition(body, Matter.Vector.create(
+            (((k % 3) / 3) * render.options.width * 0.8) + render.options.width * 0.2,
+            (Math.floor(k / 3) * render.options.height * 0.5) + render.options.height * 0.25
+          ));
+        }
+      }
+      for (var i = 0; i < years[k].participants.length; i++){
+        body = years[k].participants[i].body;
+        World.remove(world, body);
+        if(body.year === year || year === 0){
+          World.add(world, body);
+        }
+      }
+    }
+
+    window.onCircleClick();
   };
   // return a context for MatterDemo to control
   return {
